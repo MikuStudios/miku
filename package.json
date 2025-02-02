@@ -18,11 +18,13 @@
         "seyfert",
         "lavalink-discord-bot"
     ],
-    "authors": {
-        "name": "Aaron Sandoval",
-        "email": "aaron280904@proton.me",
-        "url": "https://github.com/pryzmian"
-    },
+    "contributors": [
+        {
+            "name": "Aaron Sandoval",
+            "email": "aaron280904@proton.me",
+            "url": "https://github.com/pryzmian"
+        }
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/MikuStudios/miku.git"
