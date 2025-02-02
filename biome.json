@@ -1,0 +1,94 @@
+{
+    "$schema": "https://biomejs.dev/schemas/1.9.0/schema.json",
+    "organizeImports": {
+        "enabled": true
+    },
+    "linter": {
+        "ignore": ["node_modules", "scripts"],
+        "enabled": true,
+        "rules": {
+            "all": true,
+            "suspicious": {
+                "useAwait": "off",
+                "noConsoleLog": "off",
+                "noExplicitAny": "off",
+                "noConfusingVoidType": "off",
+                "noEmptyBlockStatements": "off"
+            },
+            "style": {
+                "noNonNullAssertion": "off",
+                "noParameterAssign": "off",
+                "noInferrableTypes": "off",
+                "useNumberNamespace": "off",
+                "noDefaultExport": "off",
+                "useBlockStatements": "off",
+                "useFilenamingConvention": "off",
+                "useNamingConvention": "off",
+                "useSingleCaseStatement": "off",
+                "noParameterProperties": "off",
+                "noNamespace": "off",
+                "useExplicitLengthCheck": "off",
+                "useDefaultSwitchClause": "off",
+                "useConst": "off"
+            },
+            "complexity": {
+                "useSimplifiedLogicExpression": "off",
+                "noStaticOnlyClass": "off",
+                "noBannedTypes": "off",
+                "noForEach": "off",
+                "noExcessiveCognitiveComplexity": {
+                    "level": "warn",
+                    "options": {
+                        "maxAllowedComplexity": 30
+                    }
+                }
+            },
+            "security": {
+                "noGlobalEval": "off"
+            },
+            "correctness": {
+                "noVoidTypeReturn": "off",
+                "noNodejsModules": "off",
+                "useHookAtTopLevel": "off",
+                "noUnusedVariables": "off",
+                "useImportExtensions": "off",
+                "noUnusedFunctionParameters": "off",
+                "noUndeclaredDependencies": "off"
+            },
+            "performance": {
+                "noBarrelFile": "off",
+                "noReExportAll": "off"
+            }
+        }
+    },
+    "files": {
+        "ignoreUnknown": true,
+        "ignore": [".vscode", "node_modules", "dist"]
+    },
+    "json": {
+        "formatter": {
+            "enabled": true,
+            "indentWidth": 4,
+            "lineWidth": 80
+        }
+    },
+    "formatter": {
+        "enabled": true,
+        "indentWidth": 4,
+        "indentStyle": "space",
+        "lineWidth": 140,
+        "lineEnding": "crlf",
+        "formatWithErrors": true
+    },
+    "javascript": {
+        "formatter": {
+            "quoteStyle": "double",
+            "arrowParentheses": "always",
+            "bracketSameLine": true,
+            "semicolons": "always"
+        },
+        "parser": {
+            "unsafeParameterDecoratorsEnabled": true
+        }
+    }
+}

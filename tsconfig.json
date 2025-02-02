@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "removeComments": true,
+    "noEmitOnError": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitOverride": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "paths": {
+      "#miku/structures/": ["./src/lib/structures/index.ts"],
+      "#miku/inversify/": ["./src/inversify.config.ts"],
+      "#miku/utils": ["./src/lib/utils/index.ts"],
+      "#miku/middlewares": ["./src/middlewares/index.ts"],
+      "#miku/types": ["./src/lib/types/index.ts"],
+    }
+  },
+  "include": ["./src/**/*.ts", "./src/enviroment.ts"],
+  "exclude": ["node_modules", "dist"]
+}
